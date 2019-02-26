@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   # end
   namespace :api do
     get "/speaker" => "speaker#people"
+    get "/meetings" => "meetings#meeting"
+    get "/all_meetings" => "meetings#all_meetings"
   end
 end
