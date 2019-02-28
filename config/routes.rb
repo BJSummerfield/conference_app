@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     get "/speaker" => "speaker#people"
     get "/meetings" => "meetings#meeting"
     get "/all_meetings" => "meetings#all_meetings"
+    get "/query_params_meeting" => "meetings#query"
   end
 end
