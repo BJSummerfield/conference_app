@@ -7,9 +7,10 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
   # end
   namespace :api do
-    get "/speaker" => "speaker#people"
-    get "/meetings" => "meetings#meeting"
-    get "/all_meetings" => "meetings#all_meetings"
-    get "/query_params_meeting" => "meetings#query"
+    get "/meetings" => "meetings#index"
+    get "/meetings/:id" => "meetings#show"
+    post "meetings" => "meetings#create"
+    patch "meetings/:id" => "meetings#update"
+    delete "meetings/:id" => "meetings#destroy"
   end
 end
