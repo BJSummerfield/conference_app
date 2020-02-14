@@ -38,5 +38,6 @@ class Api::MeetingsController < ApplicationController
     @meetings.destroy
     render 'destroy.json.jbuilder'
   end
+
 end
 
